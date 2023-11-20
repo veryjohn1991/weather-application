@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a background color for the body */
+body {
+    background-color: #71821c; /* Soft green background */
+    font-family: Arial, sans-serif;
+}
+
+/* Style the header */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style the header h1 */
+header h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+/* Style the search form container */
+#search-form {
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+/* Style the city input field */
+#city-input {
+    padding: 10px;
+    width: 300px;
+    font-size: 18px;
+    border: 2px solid #ccc; /* Light gray border */
+    border-radius: 5px 0 0 5px;
+}
+
+/* Style the search button */
+#search-form button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #333;
+    color: #fff;
+    border: 2px solid #ccc; /* Light gray border */
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Style the search button hover state */
+#search-form button:hover {
+    background-color: #555;
+}
+
+/* Style the main content container */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff; /* White background */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the search history section */
+#search-history {
+    margin-top: 20px;
+}
+
+/* Style each item in the search history */
+#search-history li {
+    list-style-type: none;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f2f2f2; /* Light gray background */
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+/* Style the search history item hover state */
+#search-history li:hover {
+    background-color: #e0e0e0; /* Slightly darker gray on hover */
+}
+
+/* Style the current weather and forecast sections */
+#current-weather, #forecast {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Style the forecast items */
+.forecast-item {
+    background-color: #f2f2f2; /* Light gray background */
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    width: calc(50% - 20px); /* Two columns, with margin between them */
+}
+
+/* Style the weather icon */
+.forecast-item img {
+    max-width: 50px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+/* Style the temperature, humidity, and wind speed */
+.forecast-item p {
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 600px) {
+    /* Display forecast items in a single column on small screens */
+    .forecast-item {
+        width: 100%;
+    }
+}
